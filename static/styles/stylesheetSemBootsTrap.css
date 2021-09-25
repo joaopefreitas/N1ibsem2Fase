@@ -1,0 +1,181 @@
+html,body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("olho.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+      margin:0;
+  }
+  
+  .entrar{
+      display:none;
+  }
+  
+  .criar{
+      
+      left: 230px;
+      bottom: 350px;
+      border: none;
+      padding-left: 50px;
+      padding-right: 50px;
+      text-align: center;
+      border-radius:30px;
+      background: rgba(0, 0, 0, 0.658);
+      width: 15rem;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      box-shadow: -15px 15px 20px 0px rgba(20, 33, 61, 0.87);
+      /* margin-bottom: 200px; */
+  }
+  
+  .criar input{
+      margin-top: 35px;
+  }
+  
+  .logo{
+    width: 45rem;
+    margin-bottom: -160px;
+  }
+  
+  .cadastro{
+      margin-top: 50px;
+  }
+  
+  .mudar{
+      margin-top: -20px;
+      margin-bottom:30px;
+  }
+  
+  input{
+      border-radius: 10px;
+      color: white;
+      padding:9px;
+      background: rgba(42, 43, 54, 0.493);
+      width: 94%;
+      margin-left: -6px;
+      border-left: none;
+      border-top: none;
+      border-bottom: none;
+      border-right: none;
+  }
+  
+  .container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+   
+  }
+  
+  .container-letras{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height:100vh;
+    float: right;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -95px;
+  }
+  
+  
+  .container-letras div{
+    font-size: 5rem;
+    cursor: default;
+    font-weight: bold;
+  }
+  
+  
+  .fa {
+      padding: 10px;
+      font-size: 30px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+    }
+    .fa-facebook {
+        margin-right: 20px;
+        margin-left: 20px;
+      background: #3b589800;
+      color: #3B5998;
+    }
+    .fa-facebook:hover{
+      color:white;
+      background: #3B5998;
+    }
+  
+    .fa-twitter {
+      background: #55acee00;
+      color: #55ACEE;
+    }
+    .fa-twitter:hover{
+      color:white;
+      background: #55ACEE;
+    }
+  
+    .fa-youtube-play {
+      background: #ff000000;
+      color: rgb(168, 74, 74);
+    }
+    .fa-youtube-play:hover{
+      color: white;
+      background: #FF0000;
+    }
+  
+    button{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1em;
+      transform: scale(1.6);
+    }
+  
+    button:hover{
+      /* border: 2px solid #19415a8f; */
+      background-color: #19415adc;
+    }
+  
+    .container-letras div:hover{
+      /* text-decoration: underline #3a79a048;
+      text-decoration-thickness: 0.3rem; */
+      color:white;
+    }
+  
+    .cconta{
+      border:none;
+      color: rgb(255, 255, 255);
+       margin-bottom: 40px;
+       transform: scale(2.7);
+       cursor: default;
+    }
+    .bentrar{
+      width: 65%;
+      border: none;
+      border-radius: 10px;
+      background-color: #3a79a048;
+      color:white;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  
+    .cadastro{
+      width: 65%;
+      border: none;
+      border-radius: 10px;
+      background-color: #3a79a048;
+      color:white;
+      cursor: pointer;
+    }
+  
+    ::placeholder {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      opacity: 1;
+    }
+    
+    :-ms-input-placeholder {
+      color: white;
+    }
+    
+    ::-ms-input-placeholder {
+      color: white;
+    }

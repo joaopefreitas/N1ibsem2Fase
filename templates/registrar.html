@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Creative Roll - Opine sobre vídeos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/stylesheetSemBootsTrap.css') }}">
+    <script src="{{url_for('static', filename='passwordconfirmation.js')}}"></script>
+
+    <section class="container-letras">
+        <img src="/static/nomecompletosemfundo.png" class="logo" alt="Logo do Creative Roll">
+        <div class="descubra">Descubra,</div>
+        <div class="c">Opine,</div>
+        <div class="c">Conecte,</div>
+        <div class="c">Compartilhe.</div>
+    </section>
+
+</head>
+
+<body>
+    <section class="container">
+
+        <form action="/registro" class="criar" method="POST">
+            <div class="cconta">Sign Up</div>
+            <div class="botoes">
+                <a href="#" class="fa fa-youtube-play"></a>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+            <input type="text" name="nome" placeholder="Nome Completo" required>
+            <input type="password" id="senhaid" name="senha" placeholder="Senha" required>
+            <input type="password" id="csenha" name="confirmar" placeholder="Confirmar senha" required>
+            <input type="number" name="telefone" placeholder="Telefone" required>
+            <button class="cadastro" type="submit" onclick=validarSenha()>Cadastrar</button>
+            <button class="bentrar">Já tenho conta</button>
+        </form>
+
+    </section>
+
+
+    <form class="entrar">
+        <h1>Bem vindo de volta!</h1>
+        <a href="http://youtube.com">Y</a>
+        <a href="http://twitter">T</a>
+        <a href="http://facebook.com">F</a>
+        <div><input type="email" name="email" placeholder="E-mail" required></div>
+        <div><input type="password" name="senha" placeholder="Senha" required></div>
+        <button>Entrar</button>
+    </form>
+</body>
+
+</html>
