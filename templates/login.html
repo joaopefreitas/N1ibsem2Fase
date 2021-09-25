@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="{{url_for('static', filename='passwordconfirmation.js')}}"></script>
 
-    <section class="container-letras">
+    <section class="container-letras" id="cletras">
         <img src="/static/nomecompletosemfundo.png" class="logo" alt="Logo do Creative Roll">
         <div class="descubra">Descubra,</div>
         <div class="c">Opine,</div>
@@ -24,22 +24,20 @@
 </head>
 
 <body>
-    <section class="container" id="container">
-        <form action="/registro" class="criar" method="POST">
-            <div class="cconta">Sign Up</div>
+    <section class="container2" id="container2">
+        <form action="/home" class="criar" method="GET">
+            <div class="cconta">Sign In</div>
             <div class="botoes">
                 <a href="#" class="fa fa-youtube-play"></a>
                 <a href="#" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-twitter"></a>
             </div>
-            <input type="text" name="nome" placeholder="Nome Completo" required>
-            <input type="password" id="senhaid" name="senha" placeholder="Senha" required>
-            <input type="password" id="csenha" name="confirmar" placeholder="Confirmar senha" required>
-            <input type="number" name="telefone" placeholder="Telefone" required>
-            <button class="cadastro" type="submit" onclick=validarSenha()>Cadastrar</button>
-            <button type="button" onclick="location.href='/login'" class="bentrar" id="btnjatenhoconta">Já tenho
-                conta</button>
+            <div><input type="number" name="telefone" placeholder="Telefone" required></div>
+            <div><input type="password" name="senha" placeholder="Senha" required></div>
+            <button class="cadastro" type="submit">Entrar</button>
+            <button class="bentrar" id="btnnaotenhoconta" onclick="location.href='/registro'">Não tenho conta</button>
         </form>
+    </section>
 </body>
 
 </html>

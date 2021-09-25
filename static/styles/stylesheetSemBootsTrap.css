@@ -6,12 +6,18 @@ html,body{
       margin:0;
   }
   
-  .entrar{
-      display:none;
+  .container2{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height:100vh;
+    float: right;
+    flex-direction: column;
+    align-items: center;
   }
+
   
   .criar{
-      
       left: 230px;
       bottom: 350px;
       border: none;
@@ -64,7 +70,6 @@ html,body{
     display: flex;
     flex-direction: column;
     height:100vh;
-   
   }
   
   .container-letras{
@@ -78,11 +83,14 @@ html,body{
     margin-top: -95px;
   }
   
-  
   .container-letras div{
     font-size: 5rem;
     cursor: default;
     font-weight: bold;
+  }
+
+  #cletras{
+    float: left;
   }
   
   

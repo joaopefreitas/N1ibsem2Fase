@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Creative Roll - Opine sobre vídeos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/homestyle.css') }}">
+    <link rel="shortcut icon" href="static/favicon.ico" />
+    <link rel="icon" href="static/favicon.ico" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active h5" aria-current="page" href="#" id="links">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link h5" href="#" id="links">PERFIL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link h5" href="#" id="links">DESCOBRIR</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                        id="pesquisatopo">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" id="esquerda">
+        <img src="/static/styles/profilepic.jfif" alt="Foto do usuário" id="usuario">
+        <span class="h2" id="titulo">Tiberius</span>
+        <div href="#" class="fa fa-pencil" href="#"></div>
+        <div class="row fa fa-youtube-play d-none d-xl-block">
+        </div>
+        <div class="row d-none d-xl-block" id="podiumyoutube">
+            <div class="col-12">Primeiro</div>
+            <div class="w-100"></div>
+            <div class="col-12">Segundo</div>
+            <div class="w-100"></div>
+            <div class="col-12">Terceiro</div>
+        </div>
+        <div class="row fa fa-twitch d-none d-xl-block">
+        </div>
+        <div class="row d-none d-xl-block" id="podiumtwitch">
+            <div class="col-12">Primeiro</div>
+            <div class="w-100"></div>
+            <div class="col-12">Segundo</div>
+            <div class="w-100"></div>
+            <div class="col-12">Terceiro</div>
+        </div>
+    </div>
+    <!-- FEED-->
+    <div class="container" id="baixo">
+        <div class="row" id="botoes">
+            <div class="col-12">
+                <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#logmodal"
+                    id="botaolog">
+                    Roll
+                </button>
+            </div>
+            <!-- 
+            <div class="col-12">
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#compartilhemodal"
+                    id="botaocomp">
+                    Compartilhe algo
+                </button>
+            </div>
+            COMPARTILHE ALGO-->
+        </div>
+        <div class="row">
+            <div class="w-100"></div>
+            <div class="col-12" id="um">PRÉVIA DA AVALIAÇÃO DE VÍDEO DO USUÁRIO!</div>
+            <div class="w-100"></div>
+            <div class="col-12" id="dois">PRÉVIA DA AVALIAÇÃO DE VÍDEO DO USUÁRIO!</div>
+            <div class="w-100"></div>
+            <div class="col-12" id="tres">PRÉVIA DA AVALIAÇÃO DE VÍDEO DO USUÁRIO!</div>
+        </div>
+    </div>
+    <!-- FEED-->
+    <div class="btn-group dropup" id="dropup">
+        <button type="button" class="fa fa-cog" data-bs-toggle="dropdown" aria-expanded="false" id="botaodropup">
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark fixed-bottom">
+            <a class="dropdown-item" href="/">Sair</a>
+            <a class="dropdown-item" href="#">Sobre</a>
+            <a class="dropdown-item" href="#">Apoiar</a>
+        </ul>
+    </div>
+    <div class="btn-group dropup" id="mensagens">
+        <button class="btn btn-secondary btn-lg dropdown-toggle btn-dark" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false" id="botaomensagens">
+            Mensagens
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark" id="tamanhomensagens">
+            <a class="dropdown-item" href="#">Mensagem 1</a>
+            <a class="dropdown-item" href="#">Mensagem 2</a>
+            <a class="dropdown-item" href="#">Mensagem 3</a>
+        </ul>
+    </div>
+    <div class="modal fade" id="logmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- INICIO MODAL-->
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark">
+                <div class="modal-header text-center border-white">
+                    <h5 class="modal-title w-100" id="exampleModalLabel">DÊ NOTA A UM VÍDEO</h5>
+                    <button type="button" class="btn-close btn-danger" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="exampleDataList" class="form-label">Cole o link</label>
+                    <input class="form-control bg-dark text-white" list="datalistOptions" id="exampleDataList"
+                        placeholder="Digite para buscar...">
+                    <datalist id="datalistOptions">
+                        <option value="YouTuber 1">
+                        <option value="YouTuber 2">
+                        <option value="YouTuber 3">
+                        <option value="YouTuber 4">
+                        <option value="YouTuber 5">
+                    </datalist>
+                </div>
+                <!-- THUMBNAIL-->
+                <div class="card text-center border-0 bg-dark" style="width: 18rem;" id="cardthumb">
+                    <img src="/static/styles/thumbnail.jpg" class="card-img-top border border-dark"
+                        alt="Thumbnail do Vídeo">
+                    <div class="card-body">
+                        <h5 class="card-title">Título do Vídeo</h5>
+                    </div>
+                    <div class="estrela">
+                        <i class="fa fa-star" data-rating="1"></i>
+                        <i class="fa fa-star" data-rating="2"></i>
+                        <i class="fa fa-star" data-rating="3"></i>
+                        <i class="fa fa-star" data-rating="4"></i>
+                        <i class="fa fa-star" data-rating="5"></i>
+                    </div>
+                </div>
+                <div class="form-floating m-5" id="comentario">
+                    <textarea class="form-control bg-dark text-white" placeholder="Leave a comment here"
+                        id="floatingTextarea" style="height: 100px"></textarea>
+                    <label class="text-muted" for="floatingTextarea">Caso queira, digite um comentário sobre o
+                        vídeo.</label>
+                </div>
+                <!-- THUMBNAIL-->
+                <!-- MODAL FOOTER-->
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-success">Avaliar</button>
+                </div>
+                <!-- MODAL FOOTER-->
+            </div>
+            <!-- FINAL MODAL-->
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template, request, redirect, url_for
 from flask_mysqldb import MySQL
 import mysql.connector
@@ -23,6 +22,16 @@ def add(nome, senha, telefone):
 @app.route('/')
 def index():
     return render_template("registrar.html")
+
+
+@app.route('/home')
+def home():
+    return render_template("home.html")
+
+
+@app.route('/login')
+def login():
+    return render_template("login.html")
 
 
 @app.route("/registro", methods=["POST", "GET"])

@@ -1,0 +1,191 @@
+/* NAV  */
+html,body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+      margin:0;
+  }
+.navbar-brand{
+    background: url("nomecompletosemfundo.png") no-repeat;
+    background-size: 320px;
+    position: relative;
+    background-position: center;
+    width: 200px;
+    height: 50px;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+
+#links{
+    margin-left: -30px;
+    margin-top: 5px;
+    color: #FAF1E6;
+}
+/* NAV  */
+/* LADO ESQUERDO  */
+a{
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 50px;
+}
+
+.row{
+    font-size: 1vw;
+}
+
+#esquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 11vw;
+    float: left;
+    text-align: center;
+    border: none;
+    border-radius: 12px;
+}
+
+#usuario{
+    margin-top: 80px;
+    width: 7vw;
+    border: none;
+    border-radius: 12px;
+    box-shadow: -15px 15px 20px 0px rgba(20, 33, 61, 0.699);
+}
+
+#titulo{
+   margin-top: 6px;
+   margin-bottom: -4px;
+   font-size: 2vw;
+   color:rgba(240, 248, 255, 0.781);
+}
+
+.row{
+    margin-top: 40px;
+}
+
+.fa-youtube-play {
+    background: #ff000000;
+    color: rgb(168, 74, 74);
+    font-size: 1.5vw;
+  }
+
+.fa-twitch{
+    font-size: 1.5vw;
+    color: #6441a5;
+    margin-top: 50px;
+}
+
+.fa-pencil{
+    font-size: 1vw;
+    color:rgba(61, 102, 70, 0.623);
+}
+
+#dropup{
+    position: fixed;
+    bottom: 10px;
+    right: 97.5%;
+}
+
+#mensagens{
+    position: fixed;
+    bottom: 10px;
+    left: 90%;
+}
+
+#botaomensagens{
+    font-size: 1vw;
+}
+
+#tamanhomensagens {
+    width: 25vw !important;
+    height: 75vh !important;
+}
+
+#botaodropup{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 1.8vw;
+}
+
+/* LADO ESQUERDO  */
+
+#botaolog{
+    width: 35vw; /* width of button */
+    height: 35px; /* height of button */
+    margin-bottom: 10px;
+}
+
+#botaocomp{
+    width: 35vw; /* width of button */
+    height: 35px; /* height of button */
+}
+
+#botoes{
+    margin-top: -185px;
+    margin-bottom: 200px;
+}
+
+#cardthumb{
+    position:relative;
+    left: 31%;
+}
+
+.fa-star{
+    color: grey;
+    font-size:50px;
+}
+
+.fa-star:hover {
+    color: #198754;
+}
+
+#baixo{
+    position: relative;
+    align-items: center;
+    min-height: 100vh;
+    width: 40vw;
+    text-align: center;
+    border: none;
+    border-radius: 12px;
+    padding-top: 300px;
+}
+
+#tres{
+    margin-top: 150px;
+    color:rgba(240, 248, 255, 0.781);
+}
+#dois{
+    margin-top: 150px;
+    color:rgba(240, 248, 255, 0.781);
+}
+#um{
+    color:rgba(240, 248, 255, 0.781);
+}
+
+#podiumyoutube{
+    color:rgba(240, 248, 255, 0.781);
+}
+#podiumtwitch{
+    color:rgba(240, 248, 255, 0.781);
+}
+
+#exampleModalLabel{
+    color:rgb(240, 248, 255); 
+}
+
+.form-control{
+    color:white;
+}
+
+.card-title{
+    color:rgba(240, 248, 255, 0.781);
+}
+
+.form-label{
+    color:rgba(240, 248, 255, 0.781);
+}
+
+#pesquisatopo{
+    background-color:rgba(240, 248, 255, 0.068);
+    color:white;
+}
